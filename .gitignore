@@ -7,3 +7,10 @@
 
 build/
 example/build/
+
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/

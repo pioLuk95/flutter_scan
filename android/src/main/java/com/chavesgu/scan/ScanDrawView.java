@@ -197,7 +197,7 @@ public class ScanDrawView extends SurfaceView implements SurfaceHolder.Callback 
 
     public void resume() {
         running = true;
-        if (positionAnimator!=null)positionAnimator.resume();
+       // if (positionAnimator!=null)positionAnimator.resume();
         invalidate();
     }
     public void pause() {
