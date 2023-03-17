@@ -73,7 +73,7 @@ public class ScanPlatformView implements PlatformView, MethodChannel.MethodCallH
 
     private void resume() {
         this.scanViewNew.resume();
-//        this.scanDrawView.resume();
+        this.scanDrawView.resume();
     }
     private void pause() {
         this.scanViewNew.pause();
