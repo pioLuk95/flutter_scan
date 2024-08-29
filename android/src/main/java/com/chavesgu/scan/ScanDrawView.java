@@ -14,6 +14,7 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PixelFormat;
 import android.graphics.Region;
+import android.os.Build;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.SurfaceHolder;
@@ -102,7 +103,9 @@ public class ScanDrawView extends SurfaceView implements SurfaceHolder.Callback 
 
     @Override
     public void surfaceDestroyed(SurfaceHolder surfaceHolder) {
-        pause();
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.R){
+            pause();
+        }
         if (positionAnimator!=null) {
             positionAnimator.removeAllUpdateListeners();
             positionAnimator = null;
