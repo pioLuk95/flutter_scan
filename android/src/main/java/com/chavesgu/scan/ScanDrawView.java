@@ -103,9 +103,7 @@ public class ScanDrawView extends SurfaceView implements SurfaceHolder.Callback 
 
     @Override
     public void surfaceDestroyed(SurfaceHolder surfaceHolder) {
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.R){
-            pause();
-        }
+        pause();
         if (positionAnimator!=null) {
             positionAnimator.removeAllUpdateListeners();
             positionAnimator = null;

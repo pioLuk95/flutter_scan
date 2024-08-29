@@ -47,7 +47,9 @@ public class ScanPlatformView implements PlatformView, MethodChannel.MethodCallH
 
         this.parentView = new ParentView(context);
         this.parentView.addView(this.scanViewNew);
-        this.parentView.addView(this.scanDrawView);
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            this.parentView.addView(this.scanDrawView);
+        }
     }
 
     @Override
