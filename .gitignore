@@ -1,6 +1,7 @@
 .DS_Store
 .idea
 .dart_tool/
+.fvm
 
 .packages
 .pub/
@@ -13,5 +14,3 @@ example/build/
 *.iml
 *.ipr
 *.iws
-.idea/
-/.idea
