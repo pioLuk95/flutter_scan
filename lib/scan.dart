@@ -41,6 +41,14 @@ class _ScanViewState extends State<ScanView> {
   MethodChannel? _channel;
 
   @override
+  void dispose () {
+    _channel?.setMethodCallHandler(null);
+    widget.controller?._channel = null;
+    _channel = null;
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     if (Platform.isIOS) {
       return UiKitView(
