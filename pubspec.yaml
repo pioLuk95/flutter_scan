@@ -1,6 +1,6 @@
 name: scan
 description: scan qrcode & barcode in widget tree with custom options.Accurately decode qrcode & barcode image from path.
-version: 1.6.3
+version: 1.6.4
 homepage: https://github.com/flutter-package/flutter_scan
 
 environment:
@@ -19,7 +19,7 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter.
-flutter:
+flutter:`
   # This section identifies this Flutter project as a plugin project.
   # The 'pluginClass' and Android 'package' identifiers should not ordinarily
   # be modified. They are used by the tooling to maintain consistency when
